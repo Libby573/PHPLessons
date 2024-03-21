@@ -10,9 +10,11 @@
         <input type = "text" name = "person">
         <button> SUBMIT</button>
 </form>
+
     <?php
-        $name = $_GET['person'];
-        echo $name." is a Senior.";
+    //This gets something from the database
+    /*echo "Hi";
+    echo"Daniel";*/   
     ?>
 </body>
 </html>
