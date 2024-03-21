@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Libby</h1>
+    <form method = "GET">
+        <input type = "text" name = "person">
+        <button> SUBMIT</button>
+</form>
+    <?php
+        $name = $_GET['person'];
+        echo $name." is a Senior.";
+    ?>
 </body>
 </html>
