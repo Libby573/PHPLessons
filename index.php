@@ -14,7 +14,8 @@
     <?php
     //This gets something from the database
     /*echo "Hi";
-    echo"Daniel";*/   
+    echo"Daniel";*/ 
     ?>
+    
 </body>
 </html>
