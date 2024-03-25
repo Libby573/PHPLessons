@@ -24,6 +24,5 @@
     $names = array("Libby", "Anna", "Jessi");
     echo $names['2'];
     ?>
-
 </body>
 </html>
