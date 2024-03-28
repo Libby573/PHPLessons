@@ -17,7 +17,7 @@
         <option>Divide</option>
 </select>
 <br>
-<button type="submit" name="sumbit" value="submit">Calculate</button>
+<button type="submit" name="submit" value="submit">Calculate</button>
 </form>   
 <p> The answer is:</p>
 <?php 
