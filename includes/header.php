@@ -38,3 +38,10 @@
   </div>
 </nav>
 
+<?php
+
+$_SESSION['username'] = "Ls5053236";
+echo $_SESSION['username']
+?>
+
+
