@@ -23,8 +23,7 @@
     $name = 15.859;
 
     //boolean
-    true = 1
-    false = 0
+    
 
     //Array
     $names = array("Libby", "Anna", "Jessi");

@@ -1,6 +1,9 @@
+<?php
+  session_start()
+?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
+    <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,38 +13,38 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="calculator.php">Calculator</a>
+          <a class="nav-link" href="#">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="calendar.php">Calendar</a>
+          <a class="nav-link" href="#">Pricing</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="conditionals.php">Conditionals</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="datatypes.php">Datatypes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="functions.php">Functions</a>
-          <li class="nav-item">
-          <a class="nav-link" href="index.php">Index</a>
-          <li class="nav-item">
-          <a class="nav-link" href="loops.php">Loops</a>
-          <li class="nav-item">
-          <a class="nav-link" href="operators.php">Operators</a>
-        </li>
-        </li>
-        </li>
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <?php
 
-<?php
+$_SESSION['username'] = "LibbySim3236 ";
+echo $_SESSION['username'];
 
-$_SESSION['username'] = "Ls5053236";
-echo $_SESSION['username']
+if (!isset($_SESSION['username'])) {
+  echo "You are not logged in!";
+} else{
+  echo "You are logged in!";
+}
+
+
 ?>
-
-
+</body>
+</html>
