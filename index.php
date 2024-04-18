@@ -12,12 +12,16 @@
   <?php
     include 'includes/header.php';
 ?>
-  <form method = "GET">
-        <input type = "text" name = "person">
-        <button> SUBMIT</button>
-</form>
 
     <?php
+
+$sql = "SELECT * FROM users;";
+$result = mysqli_query($conn, $sql);
+$resultCheck = mysqli_num_rows($result);
+
+mysquil_query($conn, $sql);
+
+
     //This gets something from the database
     /*echo "Hi";
     echo"Daniel";*/ 
