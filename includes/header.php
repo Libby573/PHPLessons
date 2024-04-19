@@ -66,6 +66,23 @@
   <title>Document</title>
 </head>
 <body>
+  <header>
+<nav>
+<a href ='#'>
+  <ul>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="Portfolio"></a></li>
+    <li><a href="About me"></a></li>
+    <li><a href="Contact"></a></li>
+</ul>
+<div>
+  <form action ="" method ="post">
+    
+</form>
+</div>
+</nav>
+
+</header>
   <?php
 
 $_SESSION['username'] = "LibbySim3236 ";

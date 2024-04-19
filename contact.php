@@ -1,6 +1,3 @@
-<?php
-include_once 'dbh.inc,php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,16 +19,7 @@ include_once 'dbh.inc,php';
         <br>
         <button type="submit" name="submit"> Sign up</button>
 </form>
-    <?php
-    $sql = "SELECT * FROM users;";
-    $result = mysqli_query($conn, $sql);
-    $resultCheck = mysqli_num_rows($result);
+  
 
-    if($resultCheck > 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
-            echo $row['user_uid'] . "<br>";
-        }
-    }
-    ?>
 </body>
 </html>

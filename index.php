@@ -9,23 +9,19 @@
   <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  <?php
-    include 'includes/header.php';
-?>
-
     <?php
-
-$sql = "SELECT * FROM users;";
-$result = mysqli_query($conn, $sql);
-$resultCheck = mysqli_num_rows($result);
-
-mysquil_query($conn, $sql);
-
-
-    //This gets something from the database
-    /*echo "Hi";
-    echo"Daniel";*/ 
+    require "header.php";
     ?>
+
+    <main>
+
+
+    </main>
+    <?php
+     require "footer.php";
+    ?>
+  
+<h1> libby</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
