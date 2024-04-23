@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action = "includes/signup.inc.php" method="POST">
+<form action = "includes/signup.php" method="POST">
         <input type = "text" name = "first" placeholder="Firstname">
         <br>
         <input type = "text" name = "last" placeholder="Lastname">
