@@ -10,7 +10,8 @@
   </head>
   <body>
     <?php
-    require "header.php";
+    require "includes/header.php";
+    require 'dbh.inc.php';
     ?>
 
     <main>
