@@ -76,21 +76,22 @@
     <li><a href="#">About me</a></li>
     <li><a href="#">Contact</a></li>
 </ul>
-<div>
+</nav>
+<div class="header-login">
   <form action ="includes/login.inc.php" method ="post">
-    <input type="text" name="mailuid" placeholder="Username/E-mail...">
-    <input type="password" name="pwd" placeholder="Password...">
+    <input type="text" name="mailuid" placeholder="E-mail/Username">
+    <input type="password" name="pwd" placeholder="Password">
     <button type ="submit" name= "login-submit">Login</button>
 
 </form>
 
-<a href="signup.php">Signup</a>
+<a href="signup.php" class= "header-signup">Signup</a>
 <form action ="includes/logout.inc.php" method="post">
 <button type ="submit" name = "logout-submit"> Logout</button>
 </form>
 
 </div>
-</nav>
+
 
 </header>
   <?php
