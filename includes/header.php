@@ -1,4 +1,9 @@
 <?php
+session_start();
+?>
+
+
+<?php
     include_once 'includes/dbh.inc.php';
     ?>
 
@@ -78,6 +83,16 @@
 </ul>
 </nav>
 <div class="header-login">
+  <?php
+  if (isset($_SESSION['userId'])){
+    echo '<form action="includes/logout.inc.php"method="post">
+    <button type ="submit" name="logout-submit">Logout</button>
+    </form>';
+    }
+    else{
+      echo '<p class ="login-status"> You are logged out!</p>';
+    }
+    ?>
   <form action ="includes/login.inc.php" method ="post">
     <input type="text" name="mailuid" placeholder="E-mail/Username">
     <input type="password" name="pwd" placeholder="Password">
